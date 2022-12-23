@@ -1,0 +1,492 @@
+:root {
+  --main-color: #00acc1;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  line-height: 1.5;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  padding-left: 30rem;
+}
+section {
+  padding: 1 rem 5%;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  min-height: 100vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 172, 193);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  flex-flow: column;
+  padding: 20rem 2rem;
+  width: 30rem;
+  text-align: center;
+}
+
+header .photo {
+  position: absolute;
+  top: 350px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.photoprofile {
+  width: 70%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+header .navbar a {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  margin: 2rem 0;
+}
+header .navbar a:hover {
+  letter-spacing: 0.2rem;
+  color: #455a64;
+}
+
+#menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 172, 193, 1.2);
+  transition: all 0.3s ease-out;
+  padding-top: 20;
+}
+.wrapper .button:hover {
+  width: 200px;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #0e76a8;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button:nth-child(4):hover .icon {
+  background: #ea4335;
+}
+.wrapper .button:nth-child(5):hover .icon {
+  background: #000;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+  padding-top: 20;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  padding-top: 20;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+  color: #4267b2;
+}
+.wrapper .button:nth-child(2) span {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+.wrapper .button:nth-child(4) span {
+  color: #ea4335;
+}
+.wrapper .button:nth-child(5) span {
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 0;
+    transition: 0.5s;
+  }
+  #menu-bars {
+    display: initial;
+    transition: 0.5s;
+  }
+  header {
+    left: -120%;
+    transition: 0.5s;
+  }
+  header.active {
+    left: 0;
+    transition: 0.5s;
+  }
+  .cursor-1,
+  .cursor-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    width: 100%;
+    transition: 0.5s;
+  }
+}
+
+.cursor-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 1rem;
+  width: 1rem;
+  background: #00acc1;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+}
+.cursor-1.active {
+  height: 7rem;
+  width: 7rem;
+  opacity: 0.2;
+}
+
+.cursor-2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 4rem;
+  width: 4rem;
+  border: 0.1rem solid #00acc1;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1000;
+  transition: 0.2s linear;
+}
+.cursor-2.active {
+  display: none;
+}
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.about .content {
+  flex: 1 1 40rem;
+}
+.about .content h1 {
+  font-size: 4.5rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.about .content h1 span {
+  color: #00acc1;
+  text-transform: uppercase;
+}
+.about .content h2 {
+  font-size: 2.5rem;
+  color: #111;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+.about .content .textabout {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 5rem 0;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.education .heading {
+  flex: 1 1 40rem;
+}
+.education .heading h1 {
+  font-size: 4.5rem;
+  padding-bottom: 1rem;
+  color: #000;
+}
+.education .heading h2 {
+  font-size: 3.5rem;
+  color: #111;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.education .heading h3 {
+  font-size: 2rem;
+  color: #111;
+  padding: 0.5rem 0;
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+.education .heading p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 0.3rem 0;
+  text-transform: uppercase;
+}
+.education .heading .box p {
+  color: #00acc1;
+}
+.skills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.skills .heading {
+  flex: 1 1 40rem;
+}
+.skills .heading h1 {
+  font-size: 4.5rem;
+  padding-bottom: 2rem;
+  color: #000;
+}
+.skills .heading .headprog {
+  flex: 1 1 40rem;
+}
+.skills .heading .headprog .skillmain .progress {
+  padding: 1rem 0;
+}
+.skills .heading .headprog .skillmain .progress h2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: #111;
+  font-weight: 400;
+}
+.skills .heading .headprog .skillmain .progress .bar {
+  width: 100%;
+  background: #ccc;
+  overflow: hidden;
+  height: 1rem;
+  border-radius: 50rem;
+}
+.skills .heading .headprog .skillmain .progress .bar span {
+  display: block;
+  height: 100%;
+  background: #00acc1;
+  border-radius: 50rem;
+}
+.skills .heading .headprog .skillmain .progress:nth-child(1) .bar span {
+  width: 89%;
+}
+.skills .heading .headprog .skillmain .progress:nth-child(2) .bar span {
+  width: 80%;
+}
+.skills .heading .headprog .skillmain .progress:nth-child(3) .bar span {
+  width: 82%;
+}
+.skills .heading .headprog .skillmain .progress:nth-child(4) .bar span {
+  width: 85%;
+}
+.skills .heading .headprog .skillmain .progress:nth-child(5) .bar span {
+  width: 78%;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.experience .heading {
+  flex: 1 1 40rem;
+}
+.experience .heading h1 {
+  font-size: 4.5rem;
+  padding-bottom: 4rem;
+  color: #000;
+}
+.experience .heading .box-container {
+  display: block;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.experience .heading .box-container .box {
+  position: relative;
+  flex: 1 1 40rem;
+  border-left: 0.2rem solid var(--main-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.experience .heading .box-container .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: var(--main-color);
+}
+.experience .heading .box-container .box .content span {
+  font-size: 2.5rem;
+  color: #00acc1;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.experience .heading .box-container .box .content h3 {
+  font-size: 1.7rem;
+  color: #111;
+  padding-top: 0.7rem;
+  padding: 0.5rem 0;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.project .heading {
+  flex: 1 1 40rem;
+}
+.project .heading h1 {
+  font-size: 4.5rem;
+  padding-bottom: 4rem;
+  color: #000;
+}
+.project .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.project .box-container .box {
+  position: relative;
+  flex: 1 1 40rem;
+  height: 25rem;
+  overflow: hidden;
+  border: 1rem solid #fff;
+  box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.project .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.project .box-container .box:hover img {
+  height: 0%;
+  width: 0%;
+  border-radius: 0.5rem;
+}
+.project .box-container .box h3 {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 2.5rem;
+  color: #00acc1;
+  text-transform: uppercase;
+}
+.project .box-container .box h6 {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 1rem;
+  font-size: 1.9rem;
+  color: #000;
+  text-transform: none;
+}
+
+.project .box-container .box .icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.project .box-container .box .icons a {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  color: #000;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.project .box-container .box .icons a:hover {
+  background: #00acc1;
+  color: #fff;
+}
