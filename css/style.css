@@ -401,13 +401,15 @@ a {
   color: #00acc1;
   padding: 2rem 0;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: bolder;
 }
 .experience .heading .box-container .box .content h3 {
   font-size: 1.7rem;
   color: #111;
   padding-top: 0.7rem;
   padding: 0.5rem 0;
+  text-transform: none;
+  font-weight: lighter;
 }
 
 .project {
