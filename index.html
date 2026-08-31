@@ -2,274 +2,392 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="image/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08090a" />
+    <meta name="color-scheme" content="dark" />
+    <title>Maximilianus Raymond Kusnadi | Blue Team & SOC Cybersecurity Portfolio</title>
+    <meta
+      name="description"
+      content="Cybersecurity portfolio of Maximilianus Raymond Kusnadi, focused on Blue Team operations, SOC monitoring, threat detection, incident response, SIEM, SOAR, and security automation."
+    />
+    <meta name="author" content="Maximilianus Raymond Kusnadi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maximilianusrk.github.io/MaximilianusRaymond/" />
+    <link rel="icon" href="image/favicon.ico" sizes="16x16" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/ef4af6e7bd.js" crossorigin="anonymous"></script>
-    <title>Portofolio-Maximilianus Raymond Kusnadi</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maximilianusrk.github.io/MaximilianusRaymond/" />
+    <meta property="og:title" content="Maximilianus Raymond Kusnadi | Blue Team & SOC Cybersecurity Portfolio" />
+    <meta
+      property="og:description"
+      content="Blue Team, SOC operations, threat detection, detection engineering, SIEM, SOAR, and incident response portfolio."
+    />
+    <meta property="og:image" content="https://maximilianusrk.github.io/MaximilianusRaymond/image/og-image.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maximilianus Raymond Kusnadi | Cybersecurity Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Cybersecurity portfolio focused on Blue Team operations, SOC monitoring, detection engineering, and incident response."
+    />
+    <meta name="twitter:image" content="https://maximilianusrk.github.io/MaximilianusRaymond/image/og-image.webp" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Maximilianus Raymond Kusnadi",
+        "url": "https://maximilianusrk.github.io/MaximilianusRaymond/",
+        "jobTitle": "IT Security Blue Team (L1)",
+        "email": "mailto:raymond.max.rm@gmail.com",
+        "sameAs": [
+          "https://github.com/maximilianusrk",
+          "https://www.linkedin.com/in/maximilianusrk/"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Bina Nusantara University"
+        },
+        "knowsAbout": [
+          "Blue Team Operations",
+          "SOC Monitoring",
+          "Threat Detection",
+          "Incident Response",
+          "SIEM",
+          "SOAR",
+          "Threat Hunting",
+          "Security Automation"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="cursor-1"></div>
-    <div class="cursor-2"></div>
-    <div id="menu-bars" class="fas fa-bars"></div>
-    <header>
-      <img src="image/WhatsApp Image 2022-12-04 at 8.40.43 PM2.jpeg" class="photoprofile" />
-      <nav class="navbar" style="text-decoration: none">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">MR</span>
+        <span class="brand-copy">
+          <strong>Raymond Kusnadi</strong>
+          <span>Blue Team Portfolio</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation" data-nav>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#skill">Skills</a>
-        <a href="#project">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <div></div>
     </header>
-    <!-- about section -->
-    <section class="about" id="about">
-      <div class="content">
-        <h1>Maximilianus <span>Raymond</span> Kusnadi</h1>
-        <h2>Palmerah, Jakarta Barat</h2>
-        <p class="textabout">
-          Cybersecurity professional specializing in Blue Team operations, with expertise in threat detection, monitoring, and incident response in the financial sector. Skilled in SIEM, XDR, firewall, and endpoint security solutions to strengthen enterprise defense and resilience. Committed to advancing both defensive and offensive security knowledge with strong analytical and problem-solving skills.
-        </p>
-        <div id="contact">
-          <div class="wrapper">
-            <div class="button">
-              <div class="icon"><i class="fab fa-facebook-f"></i></div>
-              <a style="text-decoration: none" href="https://www.facebook.com/raymond.kusnadi.5"><span>Facebook</span></a>
-            </div>
 
-            <div class="button">
-              <div class="icon"><i class="fab fa-linkedin"></i></div>
-              <a style="text-decoration: none" href="https://www.linkedin.com/in/maximilianusrk/"><span>LinkedIn</span></a>
+    <main id="main">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Blue Team · SOC Operations · Detection Engineering</p>
+            <h1 id="hero-title">Cybersecurity professional defending enterprise environments through detection, response, and automation.</h1>
+            <p class="hero-summary">
+              I am Maximilianus Raymond Kusnadi, an IT Security Blue Team professional in the financial sector, focused on 24x7 security monitoring, alert triage, threat hunting support, incident response, SIEM correlation logic, SOAR playbooks, and log onboarding.
+            </p>
+            <div class="hero-actions" aria-label="Primary links">
+              <a class="button button-primary" href="#projects">View security case studies</a>
+              <a class="button button-secondary" href="mailto:raymond.max.rm@gmail.com">Contact Raymond</a>
             </div>
-            <div class="button">
-              <div class="icon"><i class="fab fa-instagram"></i></div>
-              <a style="text-decoration: none" href="https://www.instagram.com/raymndd/"><span>Instagram</span></a>
-            </div>
-            <div class="button">
-              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-              <a style="text-decoration: none" href="mailto:raymond.max.rm@gmail.com"><span>Email</span></a>
-            </div>
-            <div class="button">
-              <div class="icon"><i class="fab fa-github"></i></div>
-              <a style="text-decoration: none" href="https://github.com/maximilianusrk"><span>Github</span></a>
-            </div>
-            
-            
+            <ul class="hero-links" aria-label="Verified professional links">
+              <li><a href="https://github.com/maximilianusrk" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/maximilianusrk/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="mailto:raymond.max.rm@gmail.com">Email</a></li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section end  -->
 
-    <!-- experience section -->
-    <section class="experience" id="experience">
-      <div class="heading">
-        <h1>Experience</h1>
-        <div class="box-container">
-          <div class="box">
-            <div class="content">
-              <span>Juni 2024 - Present</span> <br>
-              <span style = "font-size: medium; font-weight: lighter;">IT Security Blue Team (L1), Bank OCBC Indonesia - Tangerang.</span>
-              <h3>· Performed 24x7 security monitoring of systems, applications, and network infrastructure using SIEM, XDR, firewall, and other security tools to detect anomalies, potential cyber threats, and unauthorized activities.</h3>
-              <h3>· Analyzed and triaged security alerts, identified suspicious patterns in endpoint and network traffic, and carried out incident response including rapid containment, threat validation, and coordination with teams for further investigation and mitigation.</h3>  
-              <h3>· Supported threat hunting by collecting and correlating logs, events, and indicators of compromise (IoCs).</h3>
-              <h3>· Implemented honeypots to observe attacker activities and exploitation techniques, enrich organizational threat intelligence, and collaborated with other IT teams to strengthen security controls and enhance the organization’s overall security posture.</h3>  
-              <h3>. Developed, tuned, and optimized SIEM correlation rules and query logic mapped, significantly reducing false positive rates and alert noise.</h3>
-              <h3>. Built end-to-end SOAR playbooks for recurring threat scenarios, decreasing Mean Time to Respond (MTTR) for high-frequency alerts.</h3>
-              <h3>. Identified unintegrated security log sources across enterprise systems and executed end-to-end log onboarding, parsing, and normalization into the SIEM.</h3>
-              <h3>. Executed threat and vulnerability analysis to produce comprehensive security advisories, ensuring technical teams effectively execute critical patch management and risk remediation workflows.</h3>
-            
-            
+          <aside class="hero-panel reveal" aria-label="Cybersecurity profile summary">
+            <div class="profile-card">
+              <picture>
+                <source srcset="image/profile.webp" type="image/webp" />
+                <img src="image/photoprofile.jpg" alt="Portrait of Maximilianus Raymond Kusnadi" width="420" height="445" />
+              </picture>
+              <div>
+                <p class="profile-name">Maximilianus Raymond Kusnadi</p>
+                <p class="profile-role">IT Security Blue Team (L1)</p>
+                <p class="profile-location">Bank OCBC Indonesia · Tangerang</p>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <div class="content">
-              <span>Februari 2023 - Februari 2024</span> <br>
-              <span style = "font-size: medium; font-weight: lighter;">Information Security Administrator Internship, PT. Japfa Comfeed Indonesia - Jakarta.</span>
-              <h3>· Executed Phishing Simulation Campaigns to Evaluate and Improve Employees'
-                Awareness and Readiness Against Cyber-attacks, Enhancing Defense Against
-                Unauthorized System and Data Access.</h3>
-              <h3>· Organized and Conducted Educational Sessions on Cyber Security Importance,
-                Emphasizing Data Protection, Password Management, and Threat Recognition, Fostering
-                a Security-Conscious Culture Across the Organization.</h3>  
-              <h3>· Conducted Regular Assessments and Compliance Scanning to Identify System
-                Vulnerabilities and Ensure Adherence to Industry Standards, Proactively Mitigating
-                Security Risks and Preserving Company Asset Integrity.</h3>
-              <h3>· Monitored the Security Information and Event Management (SIEM) System, Enabling
-                Real-time Detection, Analysis, and Response to Security Incidents and Anomalies,
-                Minimizing the Impact of Potential Breaches and Protecting Against Cyber Threats.</h3>  
+            <div class="signal-grid" aria-label="Portfolio focus areas">
+              <div><strong>24x7</strong><span>Security monitoring</span></div>
+              <div><strong>SIEM</strong><span>Correlation & tuning</span></div>
+              <div><strong>SOAR</strong><span>Recurring alert playbooks</span></div>
+              <div><strong>IR</strong><span>Triage & containment</span></div>
             </div>
-          </div>  
-      </div>    
-      </div>
-    </section>
-    <!-- experience section end  -->
-
-    <!-- education section -->
-    <section class="education" id="education">
-      <div class="heading">
-        <h1>Education</h1>
-        <div class="box-container">
-          <div class="box">
-            <div class="content">
-              <h2>Bina Nusantara University</h2>
-              <h3>School of Computer Science</h3>
-              <p>2020 - 2024</p>
-              <p>Computer Science - Cyber Security</p>
-              <p>GPA: 3.56</p>
-            </div>
-          </div>
+          </aside>
         </div>
-        <br> <br>
-        <div class="box-container">
-          <div class="box">
-            <div class="content">
-              <h2>Certified Ethical Hacker (CEH)</h2>
-              <h3>EC-Council</h3>
-              <p>April 2024 - April 2027</p>
-              <p style="text-decoration:underline; text-decoration-color: black; text-decoration-line: underline; "><a href="https://drive.google.com/file/d/1rT2C1ec6xlTQP-JQ4dVYShUDzbMb-WTH/view">CERTIFICATE</a></p>
-            </div>
-          </div>
-        </div>
-      </div> 
-      </div>
       </section>
-    <!-- education section end  -->
 
-    <!-- skills section  -->
-    <section class="skills" id="skill">
-      <div class="heading">
-        <h1>Skills</h1>
-        <div class="headprog">
-          <div class="skillmain">
-            <div class="progress">
-              <h2>
-                SIEM
-                <span>90%</span>
-              </h2>
-              <div class="bar">
-                <span class="npt"></span>
-              </div>
-              
-            </div>
-    
-              <div class="progress">
-                <h2>
-                  Threat Hunting & Intelligence
-                  <span>87%</span>
-                </h2>
-                <div class="bar">
-                  <span class="na"></span>
-                </div>
-              </div>
-    
-              <div class="progress">
-                <h2>
-                  Incident Response & Handling
-                  <span>87%</span>
-                </h2>
-                <div class="bar">
-                  <span class="dm"></span>
-                </div>
-              </div>
-    
-              <div class="progress">
-                <h2>
-                  Penetration Testing
-                  <span>80%</span>
-                </h2>
-                <div class="bar">
-                  <span class="cm"></span>
-                </div>
-              </div>
-    
-              <div class="progress">
-                <h2>
-                  Linux & Windows
-                  <span>80%</span>
-                </h2>
-                <div class="bar">
-                  <span class="ud"></span>
-                </div>
-              </div>
-    
-      </div>
-      
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container two-column">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span></span> About</p>
+            <h2 id="about-title">A Blue Team operator with engineering discipline.</h2>
           </div>
-      </div>
-      
-
-      </div>
-    </section>
-    <!-- skills section end  -->
-
-    <!-- Project <section> -->
-    <section class="project" id="project">
-      <div class="heading">
-        <h1>College Project</h1>
-        <div class="box-container">
-            <div class="box">
-              <img src="image/pentest1.png" alt="">
-              <h3>Penetration Testing<br></h3>
-              <h6>Melakukan penetration testing untuk mencari sebuah file tersembunyi menggunakan berbagai macam tools seperti <span>Nmap, Sqlmap, Disburster, Hydra</span>.</h6>
-              <div class="icons">
-                <a href="https://github.com/maximilianusrk/Penetration-Testing-Report.git" class="fas fa-link"></a>
-              </div>
+          <div class="content-stack reveal">
+            <p>
+              Raymond focuses on practical enterprise defense: validating alerts, correlating endpoint and network activity, supporting incident containment, and improving how security telemetry becomes actionable detection logic.
+            </p>
+            <div class="value-grid">
+              <article>
+                <h3>Detection-minded</h3>
+                <p>Works with SIEM, XDR, firewall, endpoint signals, IoCs, correlation rules, query logic, parsing, and normalization.</p>
+              </article>
+              <article>
+                <h3>Response-oriented</h3>
+                <p>Experienced in alert triage, suspicious pattern analysis, threat validation, rapid containment, and cross-team coordination.</p>
+              </article>
+              <article>
+                <h3>Automation-focused</h3>
+                <p>Builds SOAR playbooks for recurring threat scenarios and improves log onboarding workflows for unintegrated sources.</p>
+              </article>
+              <article>
+                <h3>Continuously learning</h3>
+                <p>Combines Blue Team work with academic cybersecurity projects in penetration testing, STRIDE analysis, networking, databases, and software engineering.</p>
+              </article>
             </div>
-
-            <div class="box">
-              <img src="image/compnetwork.png" alt="">
-              <h3>Computer Networking</h3>
-              <h6>Merancang arsitektur topologi sebuah jaringan menggunakan Cisco Packet Tracer, dan memahami prinsip kerja sebuah jaringan komputer.</h6>
-              <div class="icons">
-                <a href="https://github.com/maximilianusrk/Computer-Network-Project.git" class="fas fa-link"></a>
-              </div>
-            </div>
-
-            <div class="box">
-              <img src="image/sql.png" alt="">
-              <h3>Database Systems</h3>
-              <h6>Membuat sebuah database berdasarkan tabel ERD, dan memanipulasi tabel database tersebut menggunakan MySql.</h6>
-              <div class="icons">
-                <a href="https://github.com/maximilianusrk/Database-Systems-Project.git" class="fas fa-link"></a>
-              </div>
-            </div>
-
-            <div class="box">
-              <img src="image/machinelearning.png" alt="">
-              <h3>Machine Learning</h3>
-              <h6>Membuat sebuah machine learning yang dapat memprediksi harga rumah menggunakan Linear Regression dalam bahasa Python.</h6>
-              <div class="icons">
-                <a href="https://github.com/maximilianusrk/Machine-Learning-Project.git" class="fas fa-link"></a>
-              </div>
-            </div>
-
-            <div class="box">
-              <img src="image/softsec.png" alt="">
-              <h3>Software Security</h3>
-              <h6>Membuat sebuah analisa terkait sistem keamanan pada sebuah aplikasi menggunakan model STRIDE untuk mendapatkan hasil mitigasi yang sesuai.</h6>
-              <div class="icons">
-                <a href="https://github.com/maximilianusrk/Software-Security-Report.git" class="fas fa-link"></a>
-              </div>
-            </div>
-            <div class="box">
-              <img src="image/softend.png" alt="">
-              <h3>Software Engineering</h3>
-              <h6>Membuat sebuah aplikasi berbasis mobile menggunakan Android Studio, dan memahami prinsip-prinsip dari software engineering.</h6>
-              <div class="icons">
-                <a href="https://github.com/maximilianusrk/Software-Engineering-Project.git" class="fas fa-link"></a>
-              </div>
-            </div>
-            </div>
+          </div>
         </div>
+      </section>
 
-      <!-- Project section end  -->
-    </section>
-    <script src="js/script.js"></script>
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading narrow reveal">
+            <p class="eyebrow"><span></span> Experience</p>
+            <h2 id="experience-title">Security operations experience presented as impact areas.</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>June 2024 — Present</span>
+                <strong>Bank OCBC Indonesia · Tangerang</strong>
+              </div>
+              <div class="timeline-card">
+                <div class="card-header">
+                  <h3>IT Security Blue Team (L1)</h3>
+                  <span class="domain-badge">Financial sector</span>
+                </div>
+                <ul>
+                  <li>Performed 24x7 security monitoring across systems, applications, and network infrastructure using SIEM, XDR, firewall, and security tooling.</li>
+                  <li>Analyzed and triaged security alerts, identified suspicious endpoint and network patterns, and supported rapid containment and threat validation.</li>
+                  <li>Supported threat hunting by collecting and correlating logs, events, and indicators of compromise.</li>
+                  <li>Implemented honeypots to observe attacker activity and exploitation techniques, enriching organizational threat intelligence.</li>
+                  <li>Developed, tuned, and optimized SIEM correlation rules and query logic to reduce false positives and alert noise.</li>
+                  <li>Built SOAR playbooks for recurring threat scenarios to improve response consistency for high-frequency alerts.</li>
+                  <li>Identified unintegrated security log sources and executed log onboarding, parsing, and normalization into the SIEM.</li>
+                  <li>Produced threat and vulnerability analysis for security advisories, patch management, and risk remediation workflows.</li>
+                </ul>
+                <div class="tech-list" aria-label="Technologies and domains">
+                  <span>SIEM</span><span>XDR</span><span>Firewall</span><span>Endpoint Security</span><span>SOAR</span><span>Threat Hunting</span><span>Honeypots</span><span>Log Normalization</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>February 2023 — February 2024</span>
+                <strong>PT. Japfa Comfeed Indonesia · Jakarta</strong>
+              </div>
+              <div class="timeline-card">
+                <div class="card-header">
+                  <h3>Information Security Administrator Internship</h3>
+                  <span class="domain-badge">Enterprise security</span>
+                </div>
+                <ul>
+                  <li>Executed phishing simulation campaigns to evaluate and improve employee awareness against cyber-attacks.</li>
+                  <li>Organized educational sessions covering cybersecurity awareness, data protection, password management, and threat recognition.</li>
+                  <li>Conducted assessments and compliance scanning to identify vulnerabilities and support risk mitigation.</li>
+                  <li>Monitored SIEM activity for real-time detection, analysis, and response to security incidents and anomalies.</li>
+                </ul>
+                <div class="tech-list" aria-label="Technologies and domains">
+                  <span>Phishing Simulation</span><span>Security Awareness</span><span>Compliance Scanning</span><span>SIEM Monitoring</span><span>Vulnerability Assessment</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading narrow reveal">
+            <p class="eyebrow"><span></span> Skills</p>
+            <h2 id="skills-title">Categorized capabilities instead of generic progress bars.</h2>
+            <p>Only skills evidenced by the portfolio repository are included.</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>SOC & Blue Team</h3>
+              <ul class="tag-list"><li>24x7 Monitoring</li><li>Alert Triage</li><li>Security Monitoring</li><li>Incident Response</li><li>Threat Validation</li><li>Rapid Containment</li></ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Detection Engineering</h3>
+              <ul class="tag-list"><li>SIEM</li><li>Correlation Rules</li><li>Query Logic</li><li>Alert Tuning</li><li>False Positive Reduction</li><li>Log Parsing</li><li>Log Normalization</li><li>Log Onboarding</li></ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Threat & Vulnerability</h3>
+              <ul class="tag-list"><li>Threat Hunting Support</li><li>IoC Correlation</li><li>Honeypots</li><li>Threat Intelligence</li><li>Vulnerability Analysis</li><li>Security Advisories</li></ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Security Tooling</h3>
+              <ul class="tag-list"><li>XDR</li><li>Firewall Tools</li><li>Endpoint Security</li><li>SOAR Playbooks</li><li>Compliance Scanning</li><li>Phishing Simulation</li></ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Systems & Engineering</h3>
+              <ul class="tag-list"><li>Linux</li><li>Windows</li><li>Python</li><li>MySQL</li><li>Android Studio</li><li>Cisco Packet Tracer</li></ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Security Foundations</h3>
+              <ul class="tag-list"><li>Penetration Testing</li><li>Nmap</li><li>Sqlmap</li><li>Hydra</li><li>STRIDE</li><li>Network Topology</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading narrow reveal">
+            <p class="eyebrow"><span></span> Projects</p>
+            <h2 id="projects-title">Technical case studies grounded in verified repository projects.</h2>
+            <p>Each project is reframed around problem, implementation, tools, security impact, and available evidence.</p>
+          </div>
+
+          <div class="case-study-grid">
+            <article class="case-card featured reveal">
+              <picture><source srcset="image/project-pentest.webp" type="image/webp" /><img loading="lazy" src="image/pentest1.png" alt="Penetration testing project visual" width="720" height="494" /></picture>
+              <div class="case-body">
+                <div class="case-topline"><span>Offensive security lab</span><span>Repository verified</span></div>
+                <h3>Penetration Testing Report</h3>
+                <p class="case-summary">A college security project focused on identifying a hidden file through reconnaissance, enumeration, and exploitation tooling.</p>
+                <dl class="case-details">
+                  <div><dt>Problem</dt><dd>Find hidden content in a target environment using structured penetration testing techniques.</dd></div>
+                  <div><dt>Implementation</dt><dd>Used a tool-assisted workflow for discovery, web testing, brute-force attempts, and evidence collection.</dd></div>
+                  <div><dt>Tools</dt><dd>Nmap, Sqlmap, Disburster as listed in the original portfolio, Hydra.</dd></div>
+                  <div><dt>Security impact</dt><dd>Demonstrates attacker-path thinking that supports stronger Blue Team detection and validation.</dd></div>
+                </dl>
+                <a class="text-link" href="https://github.com/maximilianusrk/Penetration-Testing-Report.git" target="_blank" rel="noopener noreferrer">Open repository</a>
+              </div>
+            </article>
+
+            <article class="case-card reveal">
+              <picture><source srcset="image/project-stride.webp" type="image/webp" /><img loading="lazy" src="image/softsec.png" alt="Software security STRIDE project visual" width="707" height="396" /></picture>
+              <div class="case-body">
+                <div class="case-topline"><span>Threat modeling</span></div>
+                <h3>Software Security Report</h3>
+                <p>Analyzed application security using the STRIDE model to identify threats and recommend mitigations.</p>
+                <ul><li><strong>Problem:</strong> Understand security weaknesses in an application design.</li><li><strong>Approach:</strong> STRIDE-based analysis and mitigation mapping.</li><li><strong>Lesson:</strong> Defensive design starts before deployment.</li></ul>
+                <a class="text-link" href="https://github.com/maximilianusrk/Software-Security-Report.git" target="_blank" rel="noopener noreferrer">Open repository</a>
+              </div>
+            </article>
+
+            <article class="case-card reveal">
+              <picture><source srcset="image/project-network.webp" type="image/webp" /><img loading="lazy" src="image/compnetwork.png" alt="Computer networking topology project visual" width="599" height="400" /></picture>
+              <div class="case-body">
+                <div class="case-topline"><span>Network architecture</span></div>
+                <h3>Computer Network Project</h3>
+                <p>Designed network topology architecture in Cisco Packet Tracer while applying core computer networking principles.</p>
+                <ul><li><strong>Problem:</strong> Model a functional network topology.</li><li><strong>Tools:</strong> Cisco Packet Tracer.</li><li><strong>Security relevance:</strong> Network understanding improves traffic analysis and incident investigation.</li></ul>
+                <a class="text-link" href="https://github.com/maximilianusrk/Computer-Network-Project.git" target="_blank" rel="noopener noreferrer">Open repository</a>
+              </div>
+            </article>
+
+            <article class="case-card reveal">
+              <picture><source srcset="image/project-database.webp" type="image/webp" /><img loading="lazy" src="image/sql.png" alt="Database systems project visual" width="720" height="430" /></picture>
+              <div class="case-body">
+                <div class="case-topline"><span>Data systems</span></div>
+                <h3>Database Systems Project</h3>
+                <p>Created a database from an ERD and manipulated database tables using MySQL.</p>
+                <ul><li><strong>Problem:</strong> Translate relational design into database implementation.</li><li><strong>Tools:</strong> MySQL.</li><li><strong>Security relevance:</strong> Data modeling knowledge supports stronger access control, logging, and investigation context.</li></ul>
+                <a class="text-link" href="https://github.com/maximilianusrk/Database-Systems-Project.git" target="_blank" rel="noopener noreferrer">Open repository</a>
+              </div>
+            </article>
+
+            <article class="case-card reveal">
+              <picture><source srcset="image/project-ml.webp" type="image/webp" /><img loading="lazy" src="image/machinelearning.png" alt="Machine learning project visual" width="720" height="286" /></picture>
+              <div class="case-body">
+                <div class="case-topline"><span>Python</span></div>
+                <h3>Machine Learning Project</h3>
+                <p>Built a machine learning project to predict house prices using Linear Regression in Python.</p>
+                <ul><li><strong>Problem:</strong> Predict housing prices from available data.</li><li><strong>Implementation:</strong> Linear Regression model in Python.</li><li><strong>Lesson:</strong> Analytical workflows support data-driven security operations.</li></ul>
+                <a class="text-link" href="https://github.com/maximilianusrk/Machine-Learning-Project.git" target="_blank" rel="noopener noreferrer">Open repository</a>
+              </div>
+            </article>
+
+            <article class="case-card reveal">
+              <picture><source srcset="image/project-engineering.webp" type="image/webp" /><img loading="lazy" src="image/softend.png" alt="Software engineering mobile application project visual" width="664" height="380" /></picture>
+              <div class="case-body">
+                <div class="case-topline"><span>Application engineering</span></div>
+                <h3>Software Engineering Project</h3>
+                <p>Created a mobile application using Android Studio and applied software engineering principles.</p>
+                <ul><li><strong>Problem:</strong> Build a maintainable mobile application.</li><li><strong>Tools:</strong> Android Studio.</li><li><strong>Security relevance:</strong> Engineering fundamentals improve secure delivery and maintainable automation.</li></ul>
+                <a class="text-link" href="https://github.com/maximilianusrk/Software-Engineering-Project.git" target="_blank" rel="noopener noreferrer">Open repository</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certifications" aria-labelledby="certifications-title">
+        <div class="container two-column">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span></span> Education & Certification</p>
+            <h2 id="certifications-title">Academic and certification signals.</h2>
+          </div>
+          <div class="credential-grid reveal">
+            <article class="credential-card">
+              <span>Education</span>
+              <h3>Bina Nusantara University</h3>
+              <p>School of Computer Science · Computer Science — Cyber Security</p>
+              <p>2020 — 2024 · GPA 3.56</p>
+            </article>
+            <article class="credential-card">
+              <span>Certification</span>
+              <h3>Certified Ethical Hacker (CEH)</h3>
+              <p>EC-Council · April 2024 — April 2027</p>
+              <a class="text-link" href="https://drive.google.com/file/d/1rT2C1ec6xlTQP-JQ4dVYShUDzbMb-WTH/view" target="_blank" rel="noopener noreferrer">View credential</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-card reveal">
+          <div>
+            <p class="eyebrow"><span></span> Contact</p>
+            <h2 id="contact-title">Looking for a Blue Team analyst with detection engineering instincts?</h2>
+            <p>Use a verified channel below to discuss SOC operations, detection engineering, security monitoring, or incident response opportunities.</p>
+          </div>
+          <div class="contact-actions" aria-label="Contact links">
+            <a class="button button-primary" href="mailto:raymond.max.rm@gmail.com">Email Raymond</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/maximilianusrk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="https://github.com/maximilianusrk" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year></span> Maximilianus Raymond Kusnadi. Built as a static GitHub Pages portfolio.</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
   </body>
 </html>

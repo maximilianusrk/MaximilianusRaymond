@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maximilianusrk.github.io/MaximilianusRaymond/sitemap.xml
