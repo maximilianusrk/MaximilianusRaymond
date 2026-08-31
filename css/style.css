@@ -774,12 +774,17 @@ dd {
 }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 500ms ease, transform 500ms ease;
 }
 
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
